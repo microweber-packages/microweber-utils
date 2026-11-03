@@ -1,34 +1,26 @@
 {
-  "name": "microweber-packages/microweber-utils",
-  "description": "Microweber utils.",
-  "version": "0.0.1",
-  "authors": [
-    {
-      "name": "Microweber",
-      "email": "info@microweber.com"
+    "name": "microweber-packages/microweber-utils",
+    "description": "Microweber CMS.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://microweber.com",
+    "authors": [
+        {
+            "name": "Microweber",
+            "email": "info@microweber.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3"
     },
-    {
-      "name": "Bozhidar Slaveykov",
-      "email": "bobi@microweber.com"
+    "autoload": {
+        "psr-4": {
+            "MicroweberPackages\\Utils\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "replace": {
+        "microweber-packages/utils": "*"
     }
-  ],
-  "require-dev": {
-    "orchestra/testbench": "*",
-    "mockery/mockery": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "MicroweberPackages\\": "src/"
-    }
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "homepage": "http://microweber.com",
-  "license": "MIT",
-  "support": {
-    "email": "support@microweber.com"
-  }
 }
