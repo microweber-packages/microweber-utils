@@ -1,24 +1,6 @@
 parameters:
 	ignoreErrors:
 		-
-			message: '#^Call to method groups\(\) on an unknown class MailerLiteApi\\MailerLite\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/Mail/MailSubscriber.php
-
-		-
-			message: '#^Call to method service\(\) on an unknown class Finlet\\flexmail\\FlexmailAPI\\FlexmailAPI\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/Mail/MailSubscriber.php
-
-		-
-			message: '#^Call to method set\(\) on an unknown class Finlet\\flexmail\\Config\\Config\.$#'
-			identifier: class.notFound
-			count: 5
-			path: src/Mail/MailSubscriber.php
-
-		-
 			message: '#^Function get_mail_provider_settings not found\.$#'
 			identifier: function.notFound
 			count: 4
@@ -31,33 +13,9 @@ parameters:
 			path: src/Mail/MailSubscriber.php
 
 		-
-			message: '#^Function get_option not found\.$#'
-			identifier: function.notFound
-			count: 2
-			path: src/Mail/MailSubscriber.php
-
-		-
 			message: '#^Function save_mail_subscriber not found\.$#'
 			identifier: function.notFound
 			count: 3
-			path: src/Mail/MailSubscriber.php
-
-		-
-			message: '#^Instantiated class Finlet\\flexmail\\Config\\Config not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/Mail/MailSubscriber.php
-
-		-
-			message: '#^Instantiated class Finlet\\flexmail\\FlexmailAPI\\FlexmailAPI not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/Mail/MailSubscriber.php
-
-		-
-			message: '#^Instantiated class MailerLiteApi\\MailerLite not found\.$#'
-			identifier: class.notFound
-			count: 1
 			path: src/Mail/MailSubscriber.php
 
 		-
@@ -67,25 +25,7 @@ parameters:
 			path: src/Misc/ContentExport.php
 
 		-
-			message: '#^Function coupon_get_all not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Function get_categories not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
 			message: '#^Function get_comments not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Function get_content_by_id not found\.$#'
 			identifier: function.notFound
 			count: 1
 			path: src/Misc/ContentExport.php
@@ -97,50 +37,8 @@ parameters:
 			path: src/Misc/ContentExport.php
 
 		-
-			message: '#^Function get_pages not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Function get_pictures not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Function get_posts not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Function get_products not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Function mkdir_recursive not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Function offers_get_products not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Function sanitize_path not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Function user_picture not found\.$#'
-			identifier: function.notFound
+			message: '#^Function offers_get_products invoked with 1 parameter, 0 required\.$#'
+			identifier: arguments.count
 			count: 1
 			path: src/Misc/ContentExport.php
 
@@ -149,18 +47,6 @@ parameters:
 			identifier: class.notFound
 			count: 1
 			path: src/Misc/ContentExport.php
-
-		-
-			message: '#^Access to an undefined property MicroweberPackages\\Utils\\ThirdPartyLibs\\PHPImageMagician\\PhpPsdReader\:\:\$infoArray\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/ThirdPartyLibs/PHPImageMagician/PhpPsdReader.php
-
-		-
-			message: '#^Call to an undefined method MicroweberPackages\\Utils\\ThirdPartyLibs\\PHPImageMagician\\PhpPsdReader\:\:getImage\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: src/ThirdPartyLibs/PHPImageMagician/PhpPsdReader.php
 
 		-
 			message: '#^Class MicroweberPackages\\Utils\\ThirdPartyLibs\\PHPImageMagician\\PhpPsdReader does not have a constructor and must be instantiated without any parameters\.$#'
